@@ -1,3 +1,4 @@
+import Link from "next/link";
 import clsx from "clsx";
 
 const Nav = () => {
@@ -24,7 +25,9 @@ const Nav = () => {
             "hover:text-opacity-100"
           )}
         >
-          <a href={"#project"}>Project</a>
+          <Link href={"#project"}>
+            <a>Project</a>
+          </Link>
         </li>
         <li
           className={clsx(
@@ -33,7 +36,9 @@ const Nav = () => {
             "hover:text-opacity-100"
           )}
         >
-          <a href={"#aboutme"}>About me</a>
+          <Link href={"#aboutme"}>
+            <a>About me</a>
+          </Link>
         </li>
         <li
           className={clsx(
@@ -42,7 +47,9 @@ const Nav = () => {
             "hover:text-opacity-100"
           )}
         >
-          <a href={"#contact"}>Contact</a>
+          <Link href={"#contact"}>
+            <a>Contact</a>
+          </Link>
         </li>
       </ul>
     </nav>

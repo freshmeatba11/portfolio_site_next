@@ -98,7 +98,7 @@ const projectList = [
   {
     name: "Portfolio 2022/5",
     link: "#",
-    github: "#",
+    github: "https://github.com/freshmeatba11/portfolio_site_next",
     imgList: [
       require("../public/images/portfolio_site/portfolio_site_desk01.webp"),
       require("../public/images/portfolio_site/portfolio_site_desk02.webp"),
@@ -109,10 +109,10 @@ const projectList = [
     ],
     descriptionList: ["作為個人網站,提供一個快速展示作品與簡介的管道"],
     toolList: [
-      "React - 藉由框架提升程式的複用性以及維護的便利性",
+      "Next.js - 藉由框架提升維護的便利性並強化 SEO 搜尋引擎優化",
       "Tailwind - 配合 component 提升樣式編寫效率",
       "Swiper - 提供個人化功能且順暢的輪播圖",
-      "React",
+      "Vercel - 發佈網站與運行管理",
     ],
   },
 ];
