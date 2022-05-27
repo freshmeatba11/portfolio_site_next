@@ -2,19 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
+::selection {
+  color: black;
+  background-color: white;
+}
+
+@font-face {
+  font-family: SweiMarkerSansCJKtc-Regular;
+  src: url(https://cdn.jsdelivr.net/gh/max32002/swei-marker-sans@2.0/WebFont/CJK%20TC/SweiMarkerSansCJKtc-Regular.woff2)
+      format("woff2"),
+    url(https://cdn.jsdelivr.net/gh/max32002/swei-marker-sans@2.0/WebFont/CJK%20TC/SweiMarkerSansCJKtc-Regular.woff)
+      format("woff");
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #000;
+  font-family: SweiMarkerSansCJKtc-Regular, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+.App {
+  /* For Edge */
+  max-height: 100%;
+  /* WebKit-based browsers will ignore this */
+  max-height: -moz-available;
+  /* Mozilla-based browsers will ignore this. */
+  max-height: -webkit-fill-available;
+  /* For WebKit-based browsers, Edge not support this */
+  max-height: fill-available;
 }

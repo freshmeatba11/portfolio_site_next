@@ -4,7 +4,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        main: "url('../public/images/back.webp')",
+      },
+    },
   },
   plugins: [],
 };
