@@ -2,6 +2,7 @@ import clsx from "clsx";
 import Head from "next/head";
 import Nav from "../components/Nav";
 import SelfInfo from "../components/Self-info";
+import AboutMe from "../components/About-me";
 import Divider from "../components/Divider";
 
 export default function Home() {
@@ -21,6 +22,8 @@ export default function Home() {
       >
         <Nav />
         <SelfInfo />
+        <Divider />
+        <AboutMe />
         <Divider />
       </div>
     </>
