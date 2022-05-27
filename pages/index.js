@@ -2,6 +2,7 @@ import clsx from "clsx";
 import Head from "next/head";
 import Image from "next/image";
 import Nav from "../components/Nav";
+import SelfInfo from "../components/Self-info";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         )}
       >
         <Nav />
+        <SelfInfo />
       </div>
     </>
   );
