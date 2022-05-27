@@ -1,0 +1,120 @@
+const projectList = [
+  {
+    name: "Sheng's Film Site 2021/6",
+    link: "https://shengsfilm-old.netlify.app",
+    github: "https://github.com/freshmeatba11/shengsFilm",
+    imgList: [
+      require("../public/images/shengs_film/shengs_film_desk01.webp"),
+      require("../public/images/shengs_film/shengs_film_desk02.webp"),
+      require("../public/images/shengs_film/shengs_film_desk03.webp"),
+      require("../public/images/shengs_film/shengs_film_mobile01.webp"),
+      require("../public/images/shengs_film/shengs_film_mobile02.webp"),
+      require("../public/images/shengs_film/shengs_film_mobile03.webp"),
+    ],
+    descriptionList: [
+      "作為個人網站呈現客戶的影像編導、剪輯作品，並輔以文字摘要說明，希望以簡練的風格傳達專業與穩定感",
+    ],
+    toolList: [
+      "HTML - 基礎的網頁架構",
+      "SCSS - 負責處理畫面視覺設定",
+      "JS - 主要負責頁面跳轉的過渡效果與手機版的選單開合控制",
+      "在不使用套件的前提下實現頁面跳轉的過渡動畫 : 用click監聽器設定動畫效果並在結束時執行跳轉",
+    ],
+  },
+  {
+    name: "To do List Site 2021/8",
+    link: "https://freshmeatba11-todolist.netlify.app/",
+    github: "https://github.com/freshmeatba11/to_do_list",
+    imgList: [
+      require("../public/images/todolist/todolist_desk01.webp"),
+      require("../public/images/todolist/todolist_desk02.webp"),
+      require("../public/images/todolist/todolist_mobile01.webp"),
+    ],
+    descriptionList: [
+      "這個網站提供使用者記錄代辦事項的功能，並且可依日期由近到遠排序",
+    ],
+    toolList: [
+      "HTML - 基礎的網頁架構",
+      "SCSS - 處理視覺呈現",
+      "JS - 使用localStorage將內容儲存在瀏覽器中，並對資料進行排序",
+      "為提昇操作的互動性，使用Figma繪製SVG配合css animation製作動態icon",
+    ],
+  },
+  {
+    name: "Sheng's Film Site - React 2021/11",
+    link: "https://shengsfilm.netlify.app",
+    github: "https://github.com/freshmeatba11/ShengsFilm-React",
+    imgList: [
+      require("../public/images/shengs_film/shengs_film_desk01.webp"),
+      require("../public/images/shengs_film/shengs_film_desk02.webp"),
+      require("../public/images/shengs_film/shengs_film_desk03.webp"),
+      require("../public/images/shengs_film/shengs_film_mobile01.webp"),
+      require("../public/images/shengs_film/shengs_film_mobile02.webp"),
+      require("../public/images/shengs_film/shengs_film_mobile03.webp"),
+    ],
+    descriptionList: [
+      "以 React 框架重新製作個人網站，以提升網站維護、管理的便利性",
+    ],
+    toolList: [
+      "SCSS - 嘗試用組件化的概念管理css檔案",
+      "React - 藉由框架提升程式的複用性以及維護的便利性",
+      "React-transition-group - 可以配合元件的切換執行過渡效果",
+      "想要簡單的判斷瀏覽器視窗大小來決定元件渲染與否 : 使用自製Hook搭配window.innerWidth並使用useEffect監聽resize事件",
+    ],
+  },
+  {
+    name: "apartment Baofu 2022/4",
+    link: "https://apartmentbaofu.netlify.app/",
+    github: "https://github.com/freshmeatba11/apartmentFront",
+    imgList: [
+      require("../public/images/apartment_baofu/apartment_baofu_desk01.webp"),
+      require("../public/images/apartment_baofu/apartment_baofu_desk02.webp"),
+      require("../public/images/apartment_baofu/apartment_baofu_desk03.webp"),
+      require("../public/images/apartment_baofu/apartment_baofu_desk04.webp"),
+      require("../public/images/apartment_baofu/apartment_baofu_desk05.webp"),
+      require("../public/images/apartment_baofu/apartment_baofu_mobile01.webp"),
+      require("../public/images/apartment_baofu/apartment_baofu_mobile02.webp"),
+      require("../public/images/apartment_baofu/apartment_baofu_mobile03.webp"),
+    ],
+    descriptionList: [
+      "作為租屋管理網站，提供 :",
+      "1.各房型形象、內部實景",
+      "2.房客生活資訊彙整",
+      "3.三種使用者身份區別隱私訊息與管理功能",
+      "*訪客-可以瀏覽布告欄、能源費以外的頁面",
+      "*房客-可以瀏覽布告欄、能源費但無法管理內容",
+      "*管理員-可以管理布告欄、能源費內容，且可以新增房客帳號",
+    ],
+    toolList: [
+      "React - 藉由框架提升程式的複用性以及維護的便利性",
+      "Axios - 串接後端API",
+      "Tailwind - 快速編寫出想要的樣式",
+      "MongoDB - 管理使用者資料及布告欄等內容",
+      "Express - 配合DB建立RESTful風格的API",
+      "Passport - 搭配JWT管理使用者認證的功能",
+      "Joi - 驗證資料格式符合需求，並返還使用者錯誤提示",
+    ],
+  },
+  {
+    name: "Portfolio 2022/5",
+    link: "#",
+    github: "#",
+    imgList: [
+      require("../public/images/portfolio_site/portfolio_site_desk01.webp"),
+      require("../public/images/portfolio_site/portfolio_site_desk02.webp"),
+      require("../public/images/portfolio_site/portfolio_site_desk03.webp"),
+      require("../public/images/portfolio_site/portfolio_site_desk04.webp"),
+      require("../public/images/portfolio_site/portfolio_site_mobile01.webp"),
+      require("../public/images/portfolio_site/portfolio_site_mobile02.webp"),
+    ],
+    descriptionList: ["作為個人網站,提供一個快速展示作品與簡介的管道"],
+    toolList: [
+      "React - 藉由框架提升程式的複用性以及維護的便利性",
+      "Tailwind - 配合 component 提升樣式編寫效率",
+      "Swiper - 提供個人化功能且順暢的輪播圖",
+      "React",
+    ],
+  },
+];
+
+export default projectList;
