@@ -3,7 +3,7 @@ import Head from "next/head";
 import Nav from "../components/Nav";
 import SelfInfo from "../components/Self-info";
 import AboutMe from "../components/About-me";
-import Project from "../components/project";
+import Project from "../components/Project";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Divider from "../components/Divider";
