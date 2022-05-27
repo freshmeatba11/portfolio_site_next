@@ -1,8 +1,8 @@
 import clsx from "clsx";
 import Head from "next/head";
-import Image from "next/image";
 import Nav from "../components/Nav";
 import SelfInfo from "../components/Self-info";
+import Divider from "../components/Divider";
 
 export default function Home() {
   return (
@@ -21,6 +21,7 @@ export default function Home() {
       >
         <Nav />
         <SelfInfo />
+        <Divider />
       </div>
     </>
   );
