@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import clsx from "clsx";
 import projectList from "./project-list";
 
@@ -66,30 +67,32 @@ const Card = ({ data }) => {
 
         <div className={clsx("p-2", "xl:w-2/5", "2xl:w-1/2 2xl:p-12")}>
           <div>
-            <a
-              href={data.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={clsx(
-                "inline-block w-8 h-8 opacity-70",
-                "transition-all duration-300",
-                "hover:opacity-100"
-              )}
-            >
-              <GithubSvg className="w-9 h-9 fill-white" title="GitHub" />
-            </a>
-            <a
-              href={data.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={clsx(
-                "inline-block w-8 h-8 ml-4 opacity-70",
-                "transition-all duration-300",
-                "hover:opacity-100"
-              )}
-            >
-              <Image src={webPageIcon32} alt="Website" />
-            </a>
+            <Link href={data.github}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className={clsx(
+                  "inline-block w-8 h-8 opacity-70",
+                  "transition-all duration-300",
+                  "hover:opacity-100"
+                )}
+              >
+                <GithubSvg className="w-9 h-9 fill-white" title="GitHub" />
+              </a>
+            </Link>
+            <Link href={data.link}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className={clsx(
+                  "inline-block w-8 h-8 ml-4 opacity-70",
+                  "transition-all duration-300",
+                  "hover:opacity-100"
+                )}
+              >
+                <Image src={webPageIcon32} alt="Website" />
+              </a>
+            </Link>
           </div>
           <h3
             className={clsx(
