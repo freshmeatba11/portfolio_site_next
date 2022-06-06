@@ -11,7 +11,68 @@ import "swiper/css/navigation";
 import { EffectFade, Autoplay, Pagination, Navigation } from "swiper";
 
 import GithubSvg from "../public/github.svg";
-import webPageIcon32 from "../public/web-page.png";
+import SiteSvg from "../public/site.svg";
+
+const RedirectButton = ({ data }) => {
+  return (
+    <div
+      className={clsx(
+        "w-full px-4 py-8 rounded-[100px]",
+        "flex justify-start place-items-center gap-x-8 gap-y-4 flex-wrap"
+      )}
+    >
+      <Link href={data.github}>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className={clsx(
+            "group",
+            "min-w-fit w-[50%] max-w-[150px] border border-transparent py-2 px-4",
+            "rounded-[100px] bg-white text-gray-900",
+            "flex place-items-center justify-evenly gap-2",
+            "transition-all duration-300",
+            "hover:border-white hover:bg-gray-900 hover:text-white"
+          )}
+        >
+          <GithubSvg
+            className={clsx(
+              "w-8 h-8 fill-gray-700 ",
+              "transition-all duration-300",
+              "group-hover:fill-white"
+            )}
+            title="GitHub"
+          />
+          <span className="">GitHub</span>
+        </a>
+      </Link>
+
+      <Link href={data.link}>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className={clsx(
+            "group",
+            "min-w-fit w-[50%] max-w-[150px] border border-transparent py-2 px-4",
+            "rounded-[100px] bg-white text-gray-900",
+            "flex place-items-center justify-evenly gap-2",
+            "transition-all duration-300",
+            "hover:border-white hover:bg-gray-900 hover:text-white"
+          )}
+        >
+          <SiteSvg
+            className={clsx(
+              "w-8 h-8",
+              "transition-all duration-300",
+              "group-hover:stroke-white"
+            )}
+            title="Website"
+          />
+          <span className="">WebSite</span>
+        </a>
+      </Link>
+    </div>
+  );
+};
 
 const Line = () => {
   return (
@@ -66,34 +127,6 @@ const Card = ({ data }) => {
         </Swiper>
 
         <div className={clsx("p-2", "xl:w-2/5", "2xl:w-1/2 2xl:p-12")}>
-          <div>
-            <Link href={data.github}>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className={clsx(
-                  "inline-block w-8 h-8 opacity-70",
-                  "transition-all duration-300",
-                  "hover:opacity-100"
-                )}
-              >
-                <GithubSvg className="w-9 h-9 fill-white" title="GitHub" />
-              </a>
-            </Link>
-            <Link href={data.link}>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className={clsx(
-                  "inline-block w-8 h-8 ml-4 opacity-70",
-                  "transition-all duration-300",
-                  "hover:opacity-100"
-                )}
-              >
-                <Image src={webPageIcon32} alt="Website" />
-              </a>
-            </Link>
-          </div>
           <h3
             className={clsx(
               "text-white text-xl tracking-widest",
@@ -117,6 +150,7 @@ const Card = ({ data }) => {
               );
             })}
           </ul>
+          <RedirectButton data={data} />
         </div>
       </section>
 
