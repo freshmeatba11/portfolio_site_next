@@ -24,15 +24,6 @@ const Footer = () => {
           </a>
         </Link>
         <br />
-        <Link href="https://www.flaticon.com/free-icons/site">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block pt-2 text-sm text-white/50"
-          >
-            Site icon by Ilham Fitrotul Hayat - Flaticon
-          </a>
-        </Link>
         <Link href="https://icons8.com/icon/106562/github">
           <a
             target="_blank"
