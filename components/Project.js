@@ -21,55 +21,59 @@ const RedirectButton = ({ data }) => {
         "flex justify-start place-items-center gap-x-8 gap-y-4 flex-wrap"
       )}
     >
-      <Link href={data.github}>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className={clsx(
-            "group",
-            "min-w-fit w-[50%] max-w-[150px] border border-transparent py-2 px-4",
-            "rounded-[100px] bg-white text-gray-900",
-            "flex place-items-center justify-evenly gap-2",
-            "transition-all duration-300",
-            "hover:border-white hover:bg-gray-900 hover:text-white"
-          )}
-        >
-          <GithubSvg
+      {data.github && (
+        <Link href={data.github}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             className={clsx(
-              "w-8 h-8 fill-gray-700 ",
+              "group",
+              "min-w-fit w-[50%] max-w-[150px] border border-transparent py-2 px-4",
+              "rounded-[100px] bg-white text-gray-900",
+              "flex place-items-center justify-evenly gap-2",
               "transition-all duration-300",
-              "group-hover:fill-white"
+              "hover:border-white hover:bg-gray-900 hover:text-white"
             )}
-            title="GitHub"
-          />
-          <span className="">GitHub</span>
-        </a>
-      </Link>
+          >
+            <GithubSvg
+              className={clsx(
+                "w-8 h-8 fill-gray-700 ",
+                "transition-all duration-300",
+                "group-hover:fill-white"
+              )}
+              title="GitHub"
+            />
+            <span className="">GitHub</span>
+          </a>
+        </Link>
+      )}
 
-      <Link href={data.link}>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className={clsx(
-            "group",
-            "min-w-fit w-[50%] max-w-[150px] border border-transparent py-2 px-4",
-            "rounded-[100px] bg-white text-gray-900",
-            "flex place-items-center justify-evenly gap-2",
-            "transition-all duration-300",
-            "hover:border-white hover:bg-gray-900 hover:text-white"
-          )}
-        >
-          <SiteSvg
+      {data.link && (
+        <Link href={data.link}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             className={clsx(
-              "w-8 h-8",
+              "group",
+              "min-w-fit w-[50%] max-w-[150px] border border-transparent py-2 px-4",
+              "rounded-[100px] bg-white text-gray-900",
+              "flex place-items-center justify-evenly gap-2",
               "transition-all duration-300",
-              "group-hover:stroke-white"
+              "hover:border-white hover:bg-gray-900 hover:text-white"
             )}
-            title="Website"
-          />
-          <span className="">WebSite</span>
-        </a>
-      </Link>
+          >
+            <SiteSvg
+              className={clsx(
+                "w-8 h-8",
+                "transition-all duration-300",
+                "group-hover:stroke-white"
+              )}
+              title="Website"
+            />
+            <span className="">WebSite</span>
+          </a>
+        </Link>
+      )}
     </div>
   );
 };
