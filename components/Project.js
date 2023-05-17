@@ -103,32 +103,34 @@ const Card = ({ data }) => {
           "xl:flex-row"
         )}
       >
-        <Swiper
-          effect={"fade"}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[EffectFade, Autoplay, Pagination, Navigation]}
-          className="w-full max-w-screen-lg h-full"
-        >
-          {data.imgList.map((img, i) => {
-            return (
-              <SwiperSlide key={i}>
-                <Image
-                  className="w-full object-cover bg-cyan-900 rounded-xl"
-                  src={img}
-                  alt=""
-                />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+        {data.imgList.length > 0 && (
+          <Swiper
+            effect={"fade"}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[EffectFade, Autoplay, Pagination, Navigation]}
+            className="w-full max-w-screen-lg h-full"
+          >
+            {data.imgList.map((img, i) => {
+              return (
+                <SwiperSlide key={i}>
+                  <Image
+                    className="w-full object-cover bg-cyan-900 rounded-xl"
+                    src={img}
+                    alt=""
+                  />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        )}
 
         <div className={clsx("p-2", "xl:w-2/5", "2xl:w-1/2 2xl:p-12")}>
           <h3
