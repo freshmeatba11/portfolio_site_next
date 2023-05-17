@@ -185,6 +185,7 @@ const Project = () => {
       <div className="w-full">
         {projectList &&
           projectList.map((data, i) => {
+            if (data.hideThisProject == true) return;
             return <Card data={data} key={i} />;
           })}
       </div>
