@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <div
         className={clsx(
-          "App w-screen h-screen overflow-scroll scroll-smooth snap-mandatory snap-y",
+          "App w-screen h-screen overflow-x-hidden overflow-y-scroll scroll-smooth snap-mandatory snap-y",
           "bg-main bg-cover bg-center bg-no-repeat bg-blend-multiply bg-gray-800/20",
           "px-[5vw]"
         )}
