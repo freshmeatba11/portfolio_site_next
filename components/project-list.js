@@ -1,5 +1,41 @@
 const projectList = [
   {
+    name: "007online 第一銀行數位金融優惠平台 2022/11",
+    link: "https://007online.firstbank.com.tw/sites/home",
+    github: "",
+    imgList: [require("../public/images/shengs_film/shengs_film_desk01.webp")],
+    descriptionList: [
+      "007資訊網站的前台，負責呈現產品資訊、主題文章、任務活動、點數兌換 等頁面，並且因應 訪客/會員 權限區別顯示內容；藉由後台介面操作 資料庫 與 後端 api 進行全站內容管理",
+    ],
+    toolList: [
+      "Next.js - 藉由框架提升維護的便利性並強化 SEO 搜尋引擎優化",
+      "TypeScript - 以型別設定提升開發時的穩定性",
+      "MUI - 藉由元件庫加速開發流程",
+      "Styled Components - 編輯樣式與管理",
+      "React Hook Form - 協助表單狀態管理",
+      "React Loading Skeleton - 建立 Loading 過渡效果提升用戶體驗",
+      "Swiper - 塑造客製化的輪播圖元件",
+    ],
+  },
+  {
+    name: "weekie 週週趣預約服務平台 2023/2",
+    link: "",
+    github: "",
+    imgList: [require("../public/images/shengs_film/shengs_film_desk01.webp")],
+    descriptionList: [
+      "協助開發關鍵功能模組，如：會員分級設定、客製化加購選單設定、商品CRUD...等",
+    ],
+    toolList: [
+      "React - 藉由框架提升維護的便利性",
+      "TypeScript - 以型別設定提升開發時的穩定性",
+      "MUI - 藉由元件庫加速開發流程",
+      "Styled Components - 編輯樣式與管理",
+      "React Hook Form - 協助表單狀態管理",
+      "react-i18next - 協助處理多語系切換",
+    ],
+  },
+  {
+    hideThisProject: true,
     name: "Sheng's Film Site 2021/6",
     link: "https://shengsfilm-old.netlify.app",
     github: "https://github.com/freshmeatba11/shengsFilm",
@@ -22,6 +58,7 @@ const projectList = [
     ],
   },
   {
+    hideThisProject: true,
     name: "To do List Site 2021/8",
     link: "https://freshmeatba11-todolist.netlify.app/",
     github: "https://github.com/freshmeatba11/to_do_list",

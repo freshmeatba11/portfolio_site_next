@@ -21,55 +21,59 @@ const RedirectButton = ({ data }) => {
         "flex justify-start place-items-center gap-x-8 gap-y-4 flex-wrap"
       )}
     >
-      <Link href={data.github}>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className={clsx(
-            "group",
-            "min-w-fit w-[50%] max-w-[150px] border border-transparent py-2 px-4",
-            "rounded-[100px] bg-white text-gray-900",
-            "flex place-items-center justify-evenly gap-2",
-            "transition-all duration-300",
-            "hover:border-white hover:bg-gray-900 hover:text-white"
-          )}
-        >
-          <GithubSvg
+      {data.github && (
+        <Link href={data.github}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             className={clsx(
-              "w-8 h-8 fill-gray-700 ",
+              "group",
+              "min-w-fit w-[50%] max-w-[150px] border border-transparent py-2 px-4",
+              "rounded-[100px] bg-white text-gray-900",
+              "flex place-items-center justify-evenly gap-2",
               "transition-all duration-300",
-              "group-hover:fill-white"
+              "hover:border-white hover:bg-gray-900 hover:text-white"
             )}
-            title="GitHub"
-          />
-          <span className="">GitHub</span>
-        </a>
-      </Link>
+          >
+            <GithubSvg
+              className={clsx(
+                "w-8 h-8 fill-gray-700 ",
+                "transition-all duration-300",
+                "group-hover:fill-white"
+              )}
+              title="GitHub"
+            />
+            <span className="">GitHub</span>
+          </a>
+        </Link>
+      )}
 
-      <Link href={data.link}>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className={clsx(
-            "group",
-            "min-w-fit w-[50%] max-w-[150px] border border-transparent py-2 px-4",
-            "rounded-[100px] bg-white text-gray-900",
-            "flex place-items-center justify-evenly gap-2",
-            "transition-all duration-300",
-            "hover:border-white hover:bg-gray-900 hover:text-white"
-          )}
-        >
-          <SiteSvg
+      {data.link && (
+        <Link href={data.link}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             className={clsx(
-              "w-8 h-8",
+              "group",
+              "min-w-fit w-[50%] max-w-[150px] border border-transparent py-2 px-4",
+              "rounded-[100px] bg-white text-gray-900",
+              "flex place-items-center justify-evenly gap-2",
               "transition-all duration-300",
-              "group-hover:stroke-white"
+              "hover:border-white hover:bg-gray-900 hover:text-white"
             )}
-            title="Website"
-          />
-          <span className="">WebSite</span>
-        </a>
-      </Link>
+          >
+            <SiteSvg
+              className={clsx(
+                "w-8 h-8",
+                "transition-all duration-300",
+                "group-hover:stroke-white"
+              )}
+              title="Website"
+            />
+            <span className="">WebSite</span>
+          </a>
+        </Link>
+      )}
     </div>
   );
 };
@@ -99,32 +103,34 @@ const Card = ({ data }) => {
           "xl:flex-row"
         )}
       >
-        <Swiper
-          effect={"fade"}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[EffectFade, Autoplay, Pagination, Navigation]}
-          className="w-full max-w-screen-lg h-full rounded-xl"
-        >
-          {data.imgList.map((img, i) => {
-            return (
-              <SwiperSlide key={i}>
-                <Image
-                  className="w-full object-cover bg-cyan-900"
-                  src={img}
-                  alt=""
-                />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+        {data.imgList.length > 0 && (
+          <Swiper
+            effect={"fade"}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[EffectFade, Autoplay, Pagination, Navigation]}
+            className="w-full max-w-screen-lg h-full"
+          >
+            {data.imgList.map((img, i) => {
+              return (
+                <SwiperSlide key={i}>
+                  <Image
+                    className="w-full object-cover bg-cyan-900 rounded-xl"
+                    src={img}
+                    alt=""
+                  />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        )}
 
         <div className={clsx("p-2", "xl:w-2/5", "2xl:w-1/2 2xl:p-12")}>
           <h3
@@ -179,6 +185,7 @@ const Project = () => {
       <div className="w-full">
         {projectList &&
           projectList.map((data, i) => {
+            if (data.hideThisProject == true) return;
             return <Card data={data} key={i} />;
           })}
       </div>
