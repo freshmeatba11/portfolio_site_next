@@ -1,5 +1,6 @@
 const projectList = [
   {
+    hideThisProject: true,
     name: "Sheng's Film Site 2021/6",
     link: "https://shengsfilm-old.netlify.app",
     github: "https://github.com/freshmeatba11/shengsFilm",
@@ -22,6 +23,7 @@ const projectList = [
     ],
   },
   {
+    hideThisProject: true,
     name: "To do List Site 2021/8",
     link: "https://freshmeatba11-todolist.netlify.app/",
     github: "https://github.com/freshmeatba11/to_do_list",
