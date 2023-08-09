@@ -6,7 +6,8 @@ const Nav = () => {
     <nav
       className={clsx(
         "fixed top-0 left-0 z-50",
-        "w-full h-[10vh] min-h-[67px] p-4"
+        "w-full h-[10vh] min-h-[67px] p-4",
+        "select-none"
       )}
     >
       <ul

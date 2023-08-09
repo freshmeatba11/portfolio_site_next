@@ -4,6 +4,7 @@ import clsx from "clsx";
 import GithubSvg from "../public/github.svg";
 import GmailSvg from "../public/gmail.svg";
 import InstagramSvg from "../public/instagram.svg";
+import Selfie from "../public/images/selfie/selfie02.webp";
 
 const Contact = () => {
   return (
@@ -17,16 +18,22 @@ const Contact = () => {
       id="contact"
     >
       <h2
-        className={clsx("text-white text-2xl tracking-widest", "lg:text-3xl")}
+        className={clsx(
+          "text-white text-2xl tracking-widest",
+          "lg:text-3xl",
+          "select-none"
+        )}
       >
         Contact
       </h2>
-      <div className={clsx("w-[200px] h-[200px]", "lg:w-[400px] lg:h-[400px]")}>
-        <Image
-          src={require("../public/images/selfie/selfie02.webp")}
-          alt=""
-          className={clsx("rounded-full")}
-        />
+      <div
+        className={clsx(
+          "w-[200px] h-[200px]",
+          "lg:w-[400px] lg:h-[400px]",
+          "select-none"
+        )}
+      >
+        <Image src={Selfie} alt="" className={clsx("rounded-full")} />
       </div>
       <div className={clsx("flex gap-8", "lg:gap-16")}>
         <Link href="https://github.com/freshmeatba11">

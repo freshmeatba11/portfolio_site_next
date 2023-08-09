@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import Image from "next/image";
+import Selfie from "../public/images/selfie/selfie01.webp";
 
 const SelfInfo = () => {
   return (
@@ -11,12 +12,14 @@ const SelfInfo = () => {
       )}
       id="selfinfo"
     >
-      <div className={clsx("w-[200px] h-[200px]", "lg:w-[400px] lg:h-[400px]")}>
-        <Image
-          src={require("../public/images/selfie/selfie01.webp")}
-          alt=""
-          className="rounded-xl"
-        />
+      <div
+        className={clsx(
+          "w-[200px] h-[200px]",
+          "lg:w-[400px] lg:h-[400px]",
+          "select-none"
+        )}
+      >
+        <Image src={Selfie} alt="" className="rounded-xl" />
       </div>
       <div className="px-8 grid gap-4">
         <h1

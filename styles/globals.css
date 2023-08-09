@@ -20,6 +20,10 @@ body {
   font-family: SweiMarkerSansCJKtc-Regular, sans-serif;
 }
 
+.App::-webkit-scrollbar {
+  display: none;
+}
+
 .App {
   /* For Edge */
   max-height: 100%;
