@@ -12,18 +12,26 @@ const AboutMe = () => {
       id="aboutme"
     >
       <h2
-        className={clsx("text-white text-2xl tracking-widest", "lg:text-3xl")}
+        className={clsx(
+          "text-white text-2xl tracking-widest",
+          "lg:text-3xl",
+          "select-none"
+        )}
       >
         About Me
       </h2>
       <p className={clsx("max-w-3xl text-justify text-white/70", "lg:text-lg")}>
         <span>
-          {`我是陳杰生，於2021年開始於 Udemy 專注學習前端開發相關知識，於六個月內完成所有訓練課程及專案成果，除了熟稔 JavaScript (ES6)、HTML5、CSS3 等前端相關技術外，訓練過程也包含 SCSS
-      / Tailwind 編譯、Axios / JSON 資料串接、Git 版本控制、React 前端框架、使用 VS Code 開發...等技術知識。`}
+          {
+            "我是陳杰生，於 2021 年開始專注學習前端開發相關知識，在 UIUX Cafe 前端團隊期間，參與《第一銀行 - 007 資訊網》前台頁面製作，負責實作產品資訊、主題文章、任務活動、點數兌換等頁面，並且因應 訪客/會員 權限區別顯示內容。"
+          }
         </span>
         <br />
+        <br />
         <span>
-          因性格特質擅長梳理脈絡、熱衷學習，隨著新知識點與技術的成長，持續優化過去製作的專案成果。
+          {
+            "因性格特質擅長梳理脈絡、熱衷學習，隨著新知識點與技術的成長，持續優化過去製作的專案成果。在前端的工作領域中也能更快地掌握相關需求。於時效性高的專案中也能妥善分配資源，達到最高的效益。"
+          }
         </span>
       </p>
     </article>
