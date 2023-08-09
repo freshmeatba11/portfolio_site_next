@@ -1,9 +1,39 @@
+import mockup_007 from "../public/images/007/007_mockup.webp";
+import mockup_weekie from "../public/images/weekie/weekie_mockup.webp";
+
+import apartment_baofu_desk01 from "../public/images/apartment_baofu/apartment_baofu_desk01.webp";
+import apartment_baofu_desk02 from "../public/images/apartment_baofu/apartment_baofu_desk02.webp";
+import apartment_baofu_desk03 from "../public/images/apartment_baofu/apartment_baofu_desk03.webp";
+import apartment_baofu_desk04 from "../public/images/apartment_baofu/apartment_baofu_desk04.webp";
+import apartment_baofu_desk05 from "../public/images/apartment_baofu/apartment_baofu_desk05.webp";
+import apartment_baofu_mobile01 from "../public/images/apartment_baofu/apartment_baofu_mobile01.webp";
+import apartment_baofu_mobile02 from "../public/images/apartment_baofu/apartment_baofu_mobile02.webp";
+import apartment_baofu_mobile03 from "../public/images/apartment_baofu/apartment_baofu_mobile03.webp";
+
+import shengs_film_desk01 from "../public/images/shengs_film/shengs_film_desk01.webp";
+import shengs_film_desk02 from "../public/images/shengs_film/shengs_film_desk02.webp";
+import shengs_film_desk03 from "../public/images/shengs_film/shengs_film_desk03.webp";
+import shengs_film_mobile01 from "../public/images/shengs_film/shengs_film_mobile01.webp";
+import shengs_film_mobile02 from "../public/images/shengs_film/shengs_film_mobile02.webp";
+import shengs_film_mobile03 from "../public/images/shengs_film/shengs_film_mobile03.webp";
+
+import portfolio_site_desk01 from "../public/images/portfolio_site/portfolio_site_desk01.webp";
+import portfolio_site_desk02 from "../public/images/portfolio_site/portfolio_site_desk02.webp";
+import portfolio_site_desk03 from "../public/images/portfolio_site/portfolio_site_desk03.webp";
+import portfolio_site_desk04 from "../public/images/portfolio_site/portfolio_site_desk04.webp";
+import portfolio_site_mobile01 from "../public/images/portfolio_site/portfolio_site_mobile01.webp";
+import portfolio_site_mobile02 from "../public/images/portfolio_site/portfolio_site_mobile02.webp";
+
+import todolist_desk01 from "../public/images/todolist/todolist_desk01.webp";
+import todolist_desk02 from "../public/images/todolist/todolist_desk02.webp";
+import todolist_mobile01 from "../public/images/todolist/todolist_mobile01.webp";
+
 const projectList = [
   {
     name: "007online 第一銀行數位金融優惠平台 2022/11",
     link: "https://007online.firstbank.com.tw/sites/home",
     github: "",
-    imgList: [require("../public/images/007/007_mockup.webp")],
+    imgList: [mockup_007],
     descriptionList: [
       "007資訊網站的前台，負責呈現產品資訊、主題文章、任務活動、點數兌換 等頁面，並且因應 訪客/會員 權限區別顯示內容；藉由後台介面操作 資料庫 與 後端 api 進行全站內容管理",
     ],
@@ -21,7 +51,7 @@ const projectList = [
     name: "weekie 週週趣預約服務平台 2023/2",
     link: "https://shop.weekielife.com/login/",
     github: "",
-    imgList: [require("../public/images/weekie/weekie_mockup.webp")],
+    imgList: [mockup_weekie],
     descriptionList: [
       "協助開發關鍵功能模組，如：會員分級設定、客製化加購選單設定、商品CRUD...等",
     ],
@@ -39,14 +69,14 @@ const projectList = [
     link: "https://apartmentbaofu.netlify.app/",
     github: "https://github.com/freshmeatba11/apartmentFront",
     imgList: [
-      require("../public/images/apartment_baofu/apartment_baofu_desk01.webp"),
-      require("../public/images/apartment_baofu/apartment_baofu_desk02.webp"),
-      require("../public/images/apartment_baofu/apartment_baofu_desk03.webp"),
-      require("../public/images/apartment_baofu/apartment_baofu_desk04.webp"),
-      require("../public/images/apartment_baofu/apartment_baofu_desk05.webp"),
-      require("../public/images/apartment_baofu/apartment_baofu_mobile01.webp"),
-      require("../public/images/apartment_baofu/apartment_baofu_mobile02.webp"),
-      require("../public/images/apartment_baofu/apartment_baofu_mobile03.webp"),
+      apartment_baofu_desk01,
+      apartment_baofu_desk02,
+      apartment_baofu_desk03,
+      apartment_baofu_desk04,
+      apartment_baofu_desk05,
+      apartment_baofu_mobile01,
+      apartment_baofu_mobile02,
+      apartment_baofu_mobile03,
     ],
     descriptionList: [
       "作為租屋管理網站，提供 :",
@@ -72,12 +102,12 @@ const projectList = [
     link: "#",
     github: "https://github.com/freshmeatba11/portfolio_site_next",
     imgList: [
-      require("../public/images/portfolio_site/portfolio_site_desk01.webp"),
-      require("../public/images/portfolio_site/portfolio_site_desk02.webp"),
-      require("../public/images/portfolio_site/portfolio_site_desk03.webp"),
-      require("../public/images/portfolio_site/portfolio_site_desk04.webp"),
-      require("../public/images/portfolio_site/portfolio_site_mobile01.webp"),
-      require("../public/images/portfolio_site/portfolio_site_mobile02.webp"),
+      portfolio_site_desk01,
+      portfolio_site_desk02,
+      portfolio_site_desk03,
+      portfolio_site_desk04,
+      portfolio_site_mobile01,
+      portfolio_site_mobile02,
     ],
     descriptionList: ["作為個人網站,提供一個快速展示作品與簡介的管道"],
     toolList: [
@@ -93,12 +123,12 @@ const projectList = [
     link: "https://shengsfilm-old.netlify.app",
     github: "https://github.com/freshmeatba11/shengsFilm",
     imgList: [
-      require("../public/images/shengs_film/shengs_film_desk01.webp"),
-      require("../public/images/shengs_film/shengs_film_desk02.webp"),
-      require("../public/images/shengs_film/shengs_film_desk03.webp"),
-      require("../public/images/shengs_film/shengs_film_mobile01.webp"),
-      require("../public/images/shengs_film/shengs_film_mobile02.webp"),
-      require("../public/images/shengs_film/shengs_film_mobile03.webp"),
+      shengs_film_desk01,
+      shengs_film_desk02,
+      shengs_film_desk03,
+      shengs_film_mobile01,
+      shengs_film_mobile02,
+      shengs_film_mobile03,
     ],
     descriptionList: [
       "作為個人網站呈現客戶的影像編導、剪輯作品，並輔以文字摘要說明，希望以簡練的風格傳達專業與穩定感",
@@ -115,11 +145,7 @@ const projectList = [
     name: "To do List Site 2021/8",
     link: "https://freshmeatba11-todolist.netlify.app/",
     github: "https://github.com/freshmeatba11/to_do_list",
-    imgList: [
-      require("../public/images/todolist/todolist_desk01.webp"),
-      require("../public/images/todolist/todolist_desk02.webp"),
-      require("../public/images/todolist/todolist_mobile01.webp"),
-    ],
+    imgList: [todolist_desk01, todolist_desk02, todolist_mobile01],
     descriptionList: [
       "這個網站提供使用者記錄代辦事項的功能，並且可依日期由近到遠排序",
     ],
@@ -135,12 +161,12 @@ const projectList = [
     link: "https://shengsfilm.netlify.app",
     github: "https://github.com/freshmeatba11/ShengsFilm-React",
     imgList: [
-      require("../public/images/shengs_film/shengs_film_desk01.webp"),
-      require("../public/images/shengs_film/shengs_film_desk02.webp"),
-      require("../public/images/shengs_film/shengs_film_desk03.webp"),
-      require("../public/images/shengs_film/shengs_film_mobile01.webp"),
-      require("../public/images/shengs_film/shengs_film_mobile02.webp"),
-      require("../public/images/shengs_film/shengs_film_mobile03.webp"),
+      shengs_film_desk01,
+      shengs_film_desk02,
+      shengs_film_desk03,
+      shengs_film_mobile01,
+      shengs_film_mobile02,
+      shengs_film_mobile03,
     ],
     descriptionList: [
       "以 React 框架重新製作個人網站，以提升網站維護、管理的便利性",
