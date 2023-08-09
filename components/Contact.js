@@ -18,11 +18,21 @@ const Contact = () => {
       id="contact"
     >
       <h2
-        className={clsx("text-white text-2xl tracking-widest", "lg:text-3xl")}
+        className={clsx(
+          "text-white text-2xl tracking-widest",
+          "lg:text-3xl",
+          "select-none"
+        )}
       >
         Contact
       </h2>
-      <div className={clsx("w-[200px] h-[200px]", "lg:w-[400px] lg:h-[400px]")}>
+      <div
+        className={clsx(
+          "w-[200px] h-[200px]",
+          "lg:w-[400px] lg:h-[400px]",
+          "select-none"
+        )}
+      >
         <Image src={Selfie} alt="" className={clsx("rounded-full")} />
       </div>
       <div className={clsx("flex gap-8", "lg:gap-16")}>

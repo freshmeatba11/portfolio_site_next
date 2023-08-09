@@ -12,7 +12,7 @@ const Footer = () => {
         "mx-auto w-[90vw] h-[30vh] pt-24 snap-end",
         "grid justify-items-center content-center gap-4",
         "text-white",
-        "relative"
+        "relative select-none"
       )}
     >
       <hr className="w-full border border-b-0 border-white" />

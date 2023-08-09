@@ -12,7 +12,11 @@ const AboutMe = () => {
       id="aboutme"
     >
       <h2
-        className={clsx("text-white text-2xl tracking-widest", "lg:text-3xl")}
+        className={clsx(
+          "text-white text-2xl tracking-widest",
+          "lg:text-3xl",
+          "select-none"
+        )}
       >
         About Me
       </h2>

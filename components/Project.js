@@ -18,7 +18,8 @@ const RedirectButton = ({ data }) => {
     <div
       className={clsx(
         "w-full px-4 py-8 rounded-[100px]",
-        "flex justify-start place-items-center gap-x-8 gap-y-4 flex-wrap"
+        "flex justify-start place-items-center gap-x-8 gap-y-4 flex-wrap",
+        "select-none"
       )}
     >
       {data.github && (
@@ -116,7 +117,7 @@ const Card = ({ data }) => {
             }}
             navigation={true}
             modules={[EffectFade, Autoplay, Pagination, Navigation]}
-            className="w-full max-w-screen-lg h-full"
+            className="w-full max-w-screen-lg h-full select-none"
           >
             {data.imgList.map((img, i) => {
               return (
@@ -177,7 +178,8 @@ const Project = () => {
       <h2
         className={clsx(
           "pt-8 text-white text-2xl tracking-widest",
-          "lg:text-3xl"
+          "lg:text-3xl",
+          "select-none"
         )}
       >
         Project
