@@ -28,6 +28,11 @@ import todolist_desk01 from "../public/images/todolist/todolist_desk01.webp";
 import todolist_desk02 from "../public/images/todolist/todolist_desk02.webp";
 import todolist_mobile01 from "../public/images/todolist/todolist_mobile01.webp";
 
+import io_recording01 from "../public/images/io_recording/io_recording01.webp";
+import io_recording02 from "../public/images/io_recording/io_recording02.webp";
+import io_recording03 from "../public/images/io_recording/io_recording03.webp";
+import io_recording04 from "../public/images/io_recording/io_recording04.webp";
+
 const projectList = [
   {
     name: "007online 第一銀行數位金融優惠平台 2022/11",
@@ -45,6 +50,29 @@ const projectList = [
       "React Hook Form - 協助表單狀態管理",
       "React Loading Skeleton - 建立 Loading 過渡效果提升用戶體驗",
       "Swiper - 塑造客製化的輪播圖元件",
+    ],
+  },
+  {
+    name: "IO Recording 攝入/輸出記錄表 2024/3",
+    link: "https://io-recording.vercel.app/",
+    github: "https://github.com/freshmeatba11/record_io_tool",
+    imgList: [io_recording01, io_recording02, io_recording03, io_recording04],
+    descriptionList: [
+      "這個專案是收集自身經驗設計，為了降低進行紀錄工作的負擔，提供 io 紀錄時相對便利的工具。",
+      "- 單筆紀錄快速建立",
+      "- 表格排序顯示",
+      "- 紀錄匯出 CSV 檔",
+      "- 可以建立多位患者檔案進行切換",
+    ],
+    toolList: [
+      "Next.js - 藉由框架提升維護的便利性並強化 SEO 搜尋引擎優化",
+      "TypeScript - 以型別設定提升開發時的穩定性",
+      "Zustand - 好上手的狀態管理方案",
+      "React Hook Form - 協助表單狀態管理",
+      "Styled Components - 編輯樣式與管理",
+      "dayjs - 處理日期計算及格式轉換",
+      "MUI - 藉由元件庫加速開發流程",
+      "MUI/x-data-grid - 協助資料呈現與輸出 csv",
     ],
   },
   {
@@ -157,6 +185,7 @@ const projectList = [
     ],
   },
   {
+    hideThisProject: true,
     name: "Sheng's Film Site - React 2021/11",
     link: "https://shengsfilm.netlify.app",
     github: "https://github.com/freshmeatba11/ShengsFilm-React",
