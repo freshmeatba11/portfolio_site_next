@@ -35,6 +35,7 @@ import io_recording04 from "../public/images/io_recording/io_recording04.webp";
 
 const projectList = [
   {
+    offline: true,
     name: "007online 第一銀行數位金融優惠平台 2022/11",
     link: "https://007online.firstbank.com.tw/sites/home",
     github: "",
