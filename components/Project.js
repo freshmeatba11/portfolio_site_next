@@ -140,6 +140,13 @@ const Card = ({ data }) => {
               "lg:text-3xl"
             )}
           >
+            <span
+              className={clsx(
+                "w-2 h-2 inline-block rounded-full",
+                "translate-y-[-50%] translate-x-0",
+                data.offline ? "bg-red-500" : "bg-green-500"
+              )}
+            ></span>{" "}
             {data.name}
           </h3>
           <div className={clsx("py-4 text-sm text-white/70", "lg:text-lg")}>
